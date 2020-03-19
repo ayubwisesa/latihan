@@ -1,0 +1,1 @@
+console.log(cariMedian([1, 2, 3, 4, 5]));

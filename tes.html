@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <p>
+                <label for="full-name">Full Name</label>
+                <input id="full-name" name="fullName" type="text">
+            </p>
+            <p>
+                <label for="email">Email Address</label>
+                <input id="email" name="email" type="email">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Work Information</legend>
+            <!-- some other inputs -->
+        </fieldset>
+    </form>
+
+    <form>
+        <p>
+            <label for="programming">Your preferred programming languages?</label>
+            <input type="text" name="programming" list="programmingLangs" />
+            <datalist id="programmingLangs">
+                <select name="altProgrammingLangs">
+                    <option value="javascript">JavaScript</option>
+                    <option value="java">Java</option>
+                    <option value="ruby">Ruby</option>
+                    <option value="python">Python</option>
+                </select>
+            </datalist>
+        </p>
+    </form>
+<form>
+        <label for="gender">Gender:</label>
+        <input id="male-radio" type="radio" name="gender" value="male">
+        <label for="male-radio">Male</label>
+        <input id="female-radio" type="radio" name="gender" value="female">
+        <label for="female-radio">Female</label>
+    </form>
+    
+
+    <form>
+        <label for="skill">Skill:</label>
+        <input id="writing-checkbox" type="checkbox" name="skill" value="writing">
+        <label for="writing-checkbox">Writing</label>
+        <input id="reading-checkbox" type="checkbox" name="skill" value="reading">
+        <label for="reading-checkbox">Reading</label>
+        <input type="submit" value="Submit">
+    </form>
+
+    <form action="halaman_sukses_submit.html" method="POST">
+        <label>
+            Nama:
+            <input type="text" name="nama" />
+        </label>
+        <input type="submit" value="Kirim" />
+    </form>
+</body>
+
+</html>
