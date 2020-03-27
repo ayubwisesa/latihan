@@ -1,0 +1,39 @@
+1. Newton Second Law
+
+SET Massa to 600
+SET Pecepatan to 2
+SET Resultan Gaya as Massa multiply with Percepatan
+
+CALCULATE Resultan Gaya
+DISPLAY Resultan Gaya
+
+
+2. Tahun Kabisat
+
+SET tahun to 1
+IF tahun modulus 4 EQUALS 0 AND tahun modulus 100 NOT EQUALS 0, 
+SAVE previous computation result
+INCREMENT 1
+DISPLAY tahun 'adalah tahun kabisat'
+ELSE  
+DISPLAY tahun 'adalah bukan tahun kabisat'
+  
+  
+3. Laundry Day
+
+FOR Pakaian = 1, Pakaian <= 20,
+SAVE previous computation result
+INCREMENT 1
+IF Pakaian = 20
+DO mesin cuci on
+
+
+4. Periksa Kuku
+
+STORE MURID with value 40
+WHILE MURID > 0
+  IF MURID have "kuku panjang"
+    DO hukum
+  ELSE
+  	DO puji
+  SUBTRACT MURID with 1
