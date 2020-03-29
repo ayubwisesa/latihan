@@ -17,6 +17,7 @@ INCREMENT 1
 DISPLAY tahun 'adalah tahun kabisat'
 ELSE  
 DISPLAY tahun 'adalah bukan tahun kabisat'
+END IF
   
   
 3. Laundry Day
@@ -26,6 +27,7 @@ SAVE previous computation result
 INCREMENT 1
 IF Pakaian = 20
 DO mesin cuci on
+END IF
 
 
 4. Periksa Kuku
@@ -35,5 +37,7 @@ WHILE MURID > 0
   IF MURID have "kuku panjang"
     DO hukum
   ELSE
-  	DO puji
+    DO puji
+END IF
   SUBTRACT MURID with 1
+END WHILE
