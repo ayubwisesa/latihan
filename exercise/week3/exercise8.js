@@ -3,12 +3,10 @@ function pasanganTerbesar(num) {
 
     var temp = []
     for (var i = 0; i < num.toString().length; i++) {
-        if (i === num.toString().length - 1) {
-            temp.push(Number(num.toString()[i]))
-        } else {
-            temp.push(Number([num.toString()[i], num.toString()[i + 1]].join('')))
-        }
+
+        temp.push(Number([num.toString()[i], num.toString()[i + 1]].join('')))
     }
+
 
     var hasil = temp.slice(0, 1)[0]
     for (let i = 0; i < temp.length; i++) {
