@@ -1,5 +1,5 @@
 function angkaPalindrome(num) {
-
+    num++
 
     let temp = ''
     for (let i = num.toString().length - 1; i >= 0; i--) {
