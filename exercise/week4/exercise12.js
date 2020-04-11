@@ -8,6 +8,10 @@ function countProfit(shoppers) {
     // you can only write your code here!
 
     var objArr = [];
+    if (shoppers.length === 0) {
+        return []
+    }
+
     for (let i = 0; i < listBarang.length; i++) {
         var obj = {};
         obj.product = listBarang[i][0];
