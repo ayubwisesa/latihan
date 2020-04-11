@@ -1,6 +1,6 @@
 function angkaPrima(angka) {
     let Prima = true
-    for (let i = 2; i < angka; i++) { ////untuk melooping dari 2 hingga sebelum angka karena bilangan prima hanya bisa dibagi 1 dan
+    for (let i = 2; i < angka; i++) { ////untuk melooping dari 2 hingga sebelum angka 
         if (angka % i == 0) {
             Prima = false
 
