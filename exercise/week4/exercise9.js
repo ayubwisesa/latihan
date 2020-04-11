@@ -11,13 +11,16 @@ function checkAB(num) {
 
     for (let i = 0; i < indexA.length; i++) {
         for (let j = 0; j < indexB.length; j++) {
-            if (Math.abs(indexA[i] - indexB[j]) >= 3 || indexB[i] - indexA[i] >= 3) {
+            if (Math.abs(indexA[i] - indexB[j]) === 4) {
                 return true
             }
         }
     }
+
     return false
 }
+
+
 
 // TEST CASES
 console.log(checkAB('lane borrowed')); // true
